@@ -4,10 +4,10 @@
 
 
 
-## Objetivo
+## Objective
 Build your first front-end portfolio from scratch..
 
-## Tecnologias
+## Tecnologies
 Technologies
 JavaScript
 HTML5
