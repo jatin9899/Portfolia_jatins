@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jatin Saini | Portfolio </title>
+  <meta name="description" content="Portfólio da desenvolvedora front-end Elidiana Andrade para compartilhar projetos e habilidades desenvolvidas.">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+
+  <style>
+    /* Cursor Animation Styles */
+    .custom-cursor {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background-color: #007bff;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: transform 0.1s ease-out, width 0.3s ease-out, height 0.3s ease-out, background-color 0.3s ease-out;
+        z-index: 9999;
+    }
+
+    .custom-cursor.expand {
+        width: 40px;
+        height: 40px;
+        background-color: #00aaff;
+    }
+</style>
+  
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projects</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">About</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="assets/images/logo-ea.png" alt="Logo EA">
+      </a>
+    </div>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projects</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">About</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contacts</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Creative Solutions &</b> Full-Stack Development</h1>
+      <p>Jatin Saini Front-end.</p> 
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/jatin9899" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/jatin-saini-30b53a237/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+       
+      </ul>
+      <!-- <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>  
+      </a> -->
+    </div>
+    <!-- <div class="main__content2">
+      <iframe src="https://www.youtube.com/embed/HXKz2-Sohfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div> -->
+  </main>
+
+  <section class="technologies">
+    <h2>Knowledge of the main technologies in the market.</h2>
+    <!-- <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="https://th.bing.com/th/id/OIP.9OYrZr6Hw8jJXgOM6tAI4QHaIY?rs=1&pid=ImgDetMain" alt="Logo Angular">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="https://th.bing.com/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?rs=1&pid=ImgDetMain" alt="Logo TypeScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="Logo SASS">
+      </li>
+    </ul> -->
+
+    <ul class="technologies__list">
+      <li class="technologies__item">
+          <img class="technologies__logo" src="https://th.bing.com/th/id/OIP.9OYrZr6Hw8jJXgOM6tAI4QHaIY?rs=1&pid=ImgDetMain" alt="Logo Angular">
+      </li>
+      <li class="technologies__item">
+          <img class="technologies__logo" src="https://th.bing.com/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?rs=1&pid=ImgDetMain" alt="Logo TypeScript">
+      </li>
+      <li class="technologies__item">
+          <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+      </li>
+      <li class="technologies__item">
+          <img class="technologies__logo" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="Logo SASS">
+      </li>
+  </ul>
+  </section>
+<!--
+   <section id="projetos" class="projetos">
+    <h2 class="projects">Projects </h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/WhatsApp Image 2025-03-03 at 22.59.38_adde6d44.jpg"/>
+        <div class="card__body">
+          <h3 class="card__title">Shopping Card</h3>
+          <p class="card__description">Ecommerce</p>
+          <ul class="card__list">
+            <li class="card__item">List of favorites;</li>
+            <li class="card__item">Shopping cart;</li>
+            <li class="card__item">Filtragem por preço e categoria.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://th.bing.com/th/id/OIP.9OYrZr6Hw8jJXgOM6tAI4QHaIY?rs=1&pid=ImgDetMain" alt="Logo Angular">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="Logo TypeScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png" alt="Logo SASS">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary">
+              <span>Live</span>
+               <a href="https://shopping-carts-two.vercel.app/">Live</a>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn">
+              <span>Code</span>
+               <a href="https://github.com/jatin9899/shopping-cart">Code</a>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/images/projects/WhatsApp Image 2025-03-03 at 23.17.50_eb8c187a.jpg" alt="Capa Archstil">
+        <div class="card__body">
+          <h3 class="card__title">StudyNotion-EdTech</h3>
+          <p class="card__description">E-learning Platforms</p>
+          <ul class="card__list">
+            <li class="card__item">Security & Authentication in EdTech;</li>
+            <li class="card__item">Front-end Frameworks & Libraries;</li>
+            <li class="card__item">Biografia do autor.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://th.bing.com/th/id/OIP.9OYrZr6Hw8jJXgOM6tAI4QHaIY?rs=1&pid=ImgDetMain" alt="Logo Angular">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="Logo TypeScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png" alt="Logo SASS">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary">
+              <a href="https://ed-tech-project-nine.vercel.app/">Live</a>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn ">
+              <a href="https://github.com/jatin9899/Ed-Tech-Project" >Repo</a>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/WhatsApp Image 2025-03-03 at 23.33.31_fb7a8d4a.jpg" alt="Capa Games Store">
+        <div class="card__body">
+          <h3 class="card__title">Motion Art Effect</h3>
+          <p class="card__description">Live CSS Preview.</p>
+          <ul class="card__list">
+            <li class="card__item">Animations & Transitions Showcase;</li>
+            <li class="card__item">Cursor Styles;</li>
+            
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://cdn3.vectorstock.com/i/1000x1000/78/57/react-icon-in-a-hexagon-vector-36587857.jpg" alt="Logo Angular">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="Logo TypeScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png" alt="Logo SASS">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary ">
+              <a href="https://motion-art-two.vercel.app/">Live</a>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn">
+              <a href="https://github.com/jatin9899/motion-art">Repo</a>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/jatin9899">
+        <button class="btn btn--primary">
+          <span>View All Projects</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>  
+      </a>
+    </div>
+  </section> 
+
+ -->
+ <h2 class="projects" id="projetos" class="projetos">Projects </h2>
+  <div class="container">
+
+    
+    <div class="project">
+        <h3 >Project 1</h3>
+        <p>shopping-cart</p>
+        <a href="https://shopping-carts-two.vercel.app/">View Project</a>
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>Ed-tech Project.</p>
+       <a href="https://ed-tech-project-nine.vercel.app/">View Project</a>
+    </div>
+    <div class="project">
+        <h3>Project 3</h3>
+        <p>Motion Art.</p>
+        <a href="https://github.com/jatin9899/motion-art">View Project</a>
+    </div>
+</div>
+
+<a href="https://github.com/jatin9899">
+  <button class="btn btn--primary">
+    <span>View All Projects</span>
+    <i class="bi bi-arrow-up-right"></i>
+  </button>  
+</a>
+
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo " src="assets/images/linkedinphoto.jpg" alt="">
+      <div class="about__description">
+        <h2>Jatin Saini</h2>
+        <p>Hello! I'm Jatin Saini, a passionate computer science student with a drive to innovate and solve complex problems through technology.
+          I'm currently pursuing a Bachelor's degree in Computer Science at UIET, Kurukshetra university. My coursework has provided me with a strong foundation in areas like algorithms, data structures, software development, and web development. I'm enthusiastic about staying up-to-date with the latest industry trends and technologies.
+          Projects:
+          I've had the opportunity to work on various projects during my academic journey, including Netflix clone, weather app. These experiences have allowed me to apply my knowledge in practical settings and develop my teamwork and project management skills.
+        </p>  
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>English: Intermediate | Hindi: Advance</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/jatin-saini-30b53a237/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Connect with Me</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button> 
+          </a>
+          <a href="">
+            <button class="btn">
+              <!-- <span>Resume</span> -->
+               <a href="https://drive.google.com/file/d/19iMizU7Cu5njYJ2_ytqRmKRLRrnV048e/view?usp=sharing">Resume</a>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Education</h3>
+          <h4>Kurukshetra university</h4>
+          <span>june 2021 - june 2025</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>UIET, KUK</span>
+          </div>
+          <!-- <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Pós-graduação Lato Sensu - Especialização</span>
+          </div> -->
+        </div>
+        <div class="row2">
+          <h3>Experiences</h3>
+          <h4>Software Development</h4>
+          <span>Cadence Design System. july 2024 - Step 2024</span>
+          <span>Worked as Software Engineer Trainee
+          </span>
+          <ul class="about__list">
+            <li class="about__item">Worked on linux;</li>
+            <li class="about__item">Deep Knowledge of OOPS;</li>
+            <li class="about__item">Learned TCL.</li>
+          </ul>
+
+          <h4>Web developer</h4>
+          <span>Bharat INTERN. AUg 2023 - Step 2023</span>
+          <span>Worked as Front-end developer
+          </span>
+          <ul class="about__list">
+            <li class="about__item">Worked on JavaScript;</li>
+            <li class="about__item">Deep Knowledge of props ;</li>
+            <li class="about__item">Learned React.</li>
+          </ul>
+        </div>
+       
+        
+      </div>
+      <div class="col2">
+        <h3>Extra Knowledge</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Git & GitHub</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Version Control: Git records every change made to your files, creating a detailed history of your project.
+              </p>
+              <p>
+                Tracking changes in source code.
+                Collaborating with other developers.
+                Managing different versions of software.
+                Experimenting with new features without affecting the main codebase.
+                
+                  
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Linux</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Large Software Repository: Linux has a vast repository of free and open-source software, covering a wide range of applications.
+              </p>
+              <p>
+                Open-Source: Linux is open-source software, meaning its source code is freely available for anyone to use, modify, and distribute. This fosters collaboration and innovation.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>TCL</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Interpreted Language:
+Tcl is an interpreted language, meaning that code is executed line by line without the need for compilation.   
+This makes it suitable for rapid prototyping and interactive development.
+
+ 
+              </p>
+              <p>
+                Simplicity:
+                Tcl has a very simple syntax, making it easy to learn and use.   
+                Everything in Tcl is a string, which simplifies data handling.
+                
+                   
+                
+              </p>
+            </div>
+          </div>
+        </div>
+  </section>
+  
+  <section id="contato" class="contact">
+    <h2>Contact-me</h2>
+    <p>I am available for services and new connections. Contact me via email and connect with me through my social media.
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/jatin9899" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/jatin-saini-30b53a237/" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a class="menu__link" href="" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li> -->
+    </ul>
+    <a href="mailto:js9873223556@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">js9873223556@gmail.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      Made by Jatin ❤️
+      <!-- <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a> por 
+      <a href="https://github.com/elidianaandrade" target="_blank">Elidiana Andrade</a>. -->
+    </p>
+  </footer>
+
+
+  <!-- <div class="skill-chart">
+    <p>Html</p>
+    <p>CSS</p>
+    <p>Tailwind css</p>
+    <p>JavaScript</p>
+  <p>React js</p>
+  <p>Node.js</p>
+  <p>Express.js</p>
+  <p>MongoDB</p>
+  <p>C++</p>
+  <p>TCL</p>
+  </div> -->
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
